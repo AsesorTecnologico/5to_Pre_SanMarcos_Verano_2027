@@ -325,3 +325,145 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+/* Banner responsivo */
+.banner {
+    margin: 2rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay para mejorar legibilidad */
+.banner-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 77, 140, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    backdrop-filter: brightness(0.9);
+}
+
+/* Overlay semitransparente para mejorar legibilidad */
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 77, 140, 0.7);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.banner-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.banner h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.banner-btn {
+    display: inline-block;
+    background: #f5b042;
+    color: #1e2a3e;
+    padding: 0.7rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.banner-btn:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Responsive banner */
+@media (max-width: 768px) {
+    .banner {
+        min-height: 220px;
+        margin: 1rem 0;
+    }
+    .banner-content h2 {
+        font-size: 1.3rem;
+        gap: 8px;
+    }
+    .banner-content p {
+        font-size: 0.9rem;
+    }
+    .banner-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .banner {
+        min-height: 180px;
+    }
+    .banner-content h2 {
+        font-size: 1.1rem;
+    }
+    .banner-overlay {
+        padding: 1rem;
+    }
+}
+
+.banner-img-container {
+    margin: 2rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: #f0f7ff;
+    text-align: center;
+}
+
+.banner-img {
+    width: 70%;
+    height: 90%;
+    display: block;
+}
