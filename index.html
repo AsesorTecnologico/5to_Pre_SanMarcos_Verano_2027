@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material 5to Pre San Marcos - Verano 2027</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="wave-decoration"></div>
+        <div class="container header-content">
+            <div class="sun-icon"><i class="fas fa-sun"></i></div>
+            <h1><i class="fas fa-graduation-cap"></i> Material 5to Pre San Marcos - Verano 2027</h1>
+            <p>Prepárate con los mejores recursos organizados por Tomos, Intensivos y ciclos de verano. ¡Éxito en tu ingreso!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Selector principal de Tomos e Intensivos -->
+        <div class="main-selector">
+            <div class="selector-title">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>Elige tu material</span>
+            </div>
+            
+            <div class="selector-buttons" id="tomo-buttons">
+                <!-- Tomos (2) se generan con JS -->
+            </div>
+            
+            <div class="separator"><i class="fas fa-bolt"></i> Intensivos de Verano <i class="fas fa-bolt"></i></div>
+            
+            <div class="selector-buttons" id="intensivo-buttons">
+                <!-- Intensivos (3) se generan con JS -->
+            </div>
+        </div>
+
+        <!-- Pestañas de ciclos de verano -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab active" data-year="2026">
+                    Verano 2026 <span class="tab-badge">Ciclo I</span>
+                </button>
+                <button class="tab" data-year="2027">
+                    Verano 2027 <span class="tab-badge">Ciclo II</span>
+                </button>
+            </div>
+            
+            <div class="intro">
+                <div class="current-selector" id="current-selector">
+                    <i class="fas fa-book"></i>
+                    <span>Tomo I - Verano 2026</span>
+                </div>
+                
+                <div class="year-indicator">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Ciclo: <span id="current-year">2026</span></span>
+                </div>
+                <div class="courses-counter">
+                    <span id="courses-count">17</span> cursos disponibles
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid de cursos -->
+        <section class="courses-grid" id="courses-container"></section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-school"></i> <i class="fas fa-sun"></i>
+            </div>
+            <p>5to Pre San Marcos - Verano 2027</p>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+                <a href="#"><i class="fas fa-info-circle"></i> Acerca de</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Ayuda</a>
+            </div>
+            <p class="copyright">© 2026-2027 5to Pre San Marcos Verano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
